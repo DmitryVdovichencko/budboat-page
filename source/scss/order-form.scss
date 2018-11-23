@@ -37,6 +37,7 @@
 	#second-user{
 		background: $blue-light;
 		height:20vh;
+
 	}
 	.second{
 		width:50%;
@@ -52,8 +53,9 @@
 		// background: $blue-light;
 		.add-quest{
 			width:100%;
-			height:100%;
+			height:16.5vh;
 			display:flex;
+			margin:auto;
 			margin-top:5px;
 			flex-flow: column nowrap;
 			justify-content:center;
