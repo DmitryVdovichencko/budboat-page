@@ -1,0 +1,30 @@
+@import "variables";
+//Header styles
+header{
+	letter-spacing: 0.06em;
+	min-height: 40%;
+	h1{
+		line-height: 1em;
+		font-size: 5.5em;
+		margin:5px 0px 5px -0.65em;
+	}
+	text-transform: uppercase;
+	color:white;
+	width:30%;
+	p{ margin: 0px;
+		font-weight: 500;
+		// padding-left: 3.5em;
+		line-height:1.7em;
+	}
+}
+@media (max-width:640px) {
+
+		header{
+			h1{
+				font-size: 4.5em;
+			}
+			
+			min-height: 0;
+			margin-bottom:60%;
+			}
+		}

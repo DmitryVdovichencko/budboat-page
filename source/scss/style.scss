@@ -1,0 +1,298 @@
+@import "variables";
+@import "background-shapes";
+@import "language-selector";
+@import "header";
+@import "schedules";
+@import "order-form";
+html,body{
+margin: 0;
+padding: 0;
+height:100%;
+
+
+}
+
+body{
+
+	a{
+		text-decoration:none;
+		color: white;
+	}
+	
+	 box-sizing: border-box;
+  height:100vh;
+ margin:0px;
+ padding:0px;
+ display:flex;
+  
+  font-family: 'Oswald', sans-serif;
+  color:white;
+
+  
+	p{
+		padding:0px;
+		margin:0px;
+	}
+
+
+}
+
+
+//Styles for content box
+
+.content{
+	position:absolute;
+	z-index: 3;
+	position:0px 0px;
+	width:100%;
+	min-height:100vh;
+	
+	box-sizing: border-box;
+	padding:10px;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content:space-between;
+	align-items:flex-start;
+}
+
+//Styles for main container
+.main-container{
+	box-sizing: border-box;
+	width:100%;
+	min-height: 80vh;
+	display:flex;
+	flex-flow:column nowrap;
+	justify-content: space-between;
+	padding-left: 22%;
+	
+
+}
+
+
+//Photo gallery styles
+.link{
+	text-transform: uppercase;
+	
+	font-size: 2em;
+	text-decoration: underline;
+}
+
+//Order form styles
+@media (max-width:1366px) {
+	body{
+		font-size:12px;
+		
+	}
+
+	.main-container{
+		padding-left: 10%;
+	}
+	
+}
+
+
+	
+//age verification popup styles
+.popup-age{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100vh;
+	background: $red;
+	z-index:100;
+	#enter {
+		display: block;
+		width:20%;
+		padding: 0px;
+
+	}
+	.accept{
+		width:100%;
+		// padding: 5px 10%;
+	}
+	.container-age{
+		width:100%;
+		height:90%;
+		margin:auto;
+		
+		padding:0px;
+		box-sizing: border-box;
+
+		display:flex;
+		flex-flow:column nowrap;
+		justify-content: flex-start;
+		align-items: center;
+		.title{
+			text-transform: uppercase;
+			font-weight: 500;
+			padding:10px 0px;
+			margin-top: 5%;
+			p{
+				padding-left: 1.5em;
+			}
+			
+			h1{
+				
+				font-size:4.5em;
+				
+				padding:0px;
+				margin:0px auto;
+				margin-bottom: 10vh;
+			}
+		}
+		.form-age{
+			
+			width:60%;
+			margin-top:0px;
+			display: flex;
+			flex-flow: row nowrap;
+			justify-content:center ;
+			
+			select{
+				background: transparent;
+				 border: 0;
+				 appearance: none;            /* remove arrow        */
+				 -webkit-appearance: none;    /* remove arrow Chrome */
+				 -moz-appearance: none;       /* remove arrow FF     */
+				width:10vw;
+				min-width: 80px;
+				height:50px;
+				background: white;
+				background-image: url("img/sel.png");
+				background-position: right center;
+				background-position-x:90%;
+  				background-repeat: no-repeat;
+
+				margin:10px 10px;
+				color: $blue-middle;
+				padding:0px 10px;
+		
+				font-weight: 500;
+				text-transform:uppercase;
+				font-family: 'Oswald', sans-serif;
+			}
+			select:first-child{
+				width: 5vw;
+			}
+
+		}
+
+	} 
+
+}
+//Footer styles
+footer{
+	font-family: 'Roboto', sans-serif;
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	padding:0px 30px;
+	p:first-child{
+		span:first-child{
+			padding-right:30px;
+		}
+		padding:5px 0px;
+	}
+	span {
+		padding-right:10px;
+	}
+}
+//Mobile
+@media (max-width:640px) {
+	.content{
+		display: flex;
+		flex-flow:column nowrap;
+		justify-content: flex-start;
+	max-height: none;
+	height:100%;
+		
+		
+		.main-container{
+		padding:5px;
+		width:100%;
+		
+		max-height: none;
+		
+		}
+
+
+	position:relative;
+		.order-form{
+			position:relative;
+			margin-top: 0%;
+			
+			display:flex;
+			.clients{
+				// height:100vh;
+				
+
+				.client-form{
+					max-width:100%;
+					width:100%;
+				}
+			}
+			.client-form__container{
+
+				width:100%;
+				.input{text-align: center;}
+				input{
+					width:70%;
+					margin-bottom: 20px;
+				}		
+				//placeholder styles
+				::-webkit-input-placeholder { /* Chrome и Safari */
+					text-align: center;
+					font-size:2em;
+				}
+				:-moz-placeholder { /* Firefox 18- */
+					text-align: center;
+				}
+				::-moz-placeholder { /* Firefox 19+ */
+					text-align: center;
+				}
+				:-ms-input-placeholder { /* IE10 */
+					text-align: center;
+				}
+				.placeholder { /* IE7 - IE9 */
+					text-align: center;
+				}
+
+			}
+		
+
+	
+		}
+
+
+	}
+	.background-shapes{
+		display:none;
+	}
+	body{
+		height: auto;
+		max-height: none;
+
+
+	
+		background: url('img/m_bg.png') no-repeat ;
+		background-size:cover;
+	}
+
+	header{
+		h1{
+			padding:0px 0px 10px 0px;
+			margin:0px;
+			text-align: center;
+		}
+		width:100%;
+		text-align: center;
+
+	}
+	.photo-gallery{
+		display:none;
+	}
+
+footer{margin:auto;
+	margin-bottom:0px; }
+}

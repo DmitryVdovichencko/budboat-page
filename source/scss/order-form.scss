@@ -1,0 +1,233 @@
+@import "variables";
+.order-form{
+	min-height: 32%;
+	width:75%;
+	max-width: 64vw;
+	display:flex;
+	flex-flow:column nowrap;
+	justify-content: flex-start;
+	margin: auto;
+	margin:8% auto 10px 0px;
+	
+	.clients{
+		
+		display: flex;
+	flex-flow:row wrap;
+	flex-flow: flex-start;
+	}
+	.client-form__wrapper{
+		max-width:100%;
+
+		display:flex;
+		flex-flow: row wrap;
+		.client-form__container{
+			
+			display:flex;
+			flex-flow:column nowrap;
+			.text-tip{
+				font-size: 0.7em;
+				margin: -1.5em 10px auto auto;
+				text-align:right;
+			}
+
+
+		}
+
+	}
+	#second-user{
+		background: $blue-light;
+		height:20vh;
+	}
+	.second{
+		width:50%;
+		
+		margin-left: 5px;
+		padding: 0px;
+		box-sizing: border-box;
+
+		margin:auto;
+		margin-top:0px;
+		height:70%;
+
+		// background: $blue-light;
+		.add-quest{
+			width:100%;
+			height:100%;
+			display:flex;
+			margin-top:5px;
+			flex-flow: column nowrap;
+			justify-content:center;
+			align-items:center;
+			background: $blue-light;
+		}
+		.agree{
+			width:100%;
+
+			.checkbox{
+				margin-left:0px;
+			}
+			.user-title{
+				width:50%;
+				font-size:2em;
+				font-weight:500;
+				text-transform: uppercase;
+			}
+	
+		}
+	
+
+	
+	}
+	input{
+		border-radius: 0px;
+		height:5vh;
+		width:12.8vw;
+		margin:5px;
+		padding: 0px 5px;
+		font-size: 0.8em;
+		text-transform:uppercase;
+		font-family: 'Oswald', sans-serif;
+		font-weight: 500;
+		color: $blue;
+		border:solid 1px $blue-light;
+	}
+	//placeholder styles
+	::-webkit-input-placeholder { /* Chrome и Safari */
+		color: $blue;
+		opacity: 0.5;
+		font-size: 0.8em;
+		text-transform:uppercase;
+		font-family: 'Oswald', sans-serif;
+		font-weight: 500;
+	}
+	:-moz-placeholder { /* Firefox 18- */
+		color: $blue;
+		opacity: 0.7;
+		font-weight: 500;
+		text-transform:uppercase;
+		font-family: 'Oswald', sans-serif;
+	}
+	::-moz-placeholder { /* Firefox 19+ */
+		color: $blue;
+		opacity: 0.7;
+		font-weight: 500;
+		text-transform:uppercase;
+		font-family: 'Oswald', sans-serif;
+	}
+	:-ms-input-placeholder { /* IE10 */
+		color: $blue;
+		opacity: 0.7;
+		font-weight: 500;
+		text-transform:uppercase;
+		font-family: 'Oswald', sans-serif;;
+	}
+	.placeholder { /* IE7 - IE9 */
+		color: $blue;
+		opacity: 0.7;
+		font-weight: 500;
+		text-transform:uppercase;
+		font-family: 'Oswald', sans-serif;
+	}
+}
+.checkbox{
+	width:20px;
+	height:20px;
+	
+	margin-left:5px;
+	border:white 1px solid;
+}
+.checked{
+	background-image: url('img/checked.png');
+	background-size: contain;
+}
+.agree{
+	
+	display:flex;
+	width:50%;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	font-size:0.7em;
+	span{
+		margin-left: 10px;
+		width:35%;
+	}
+	.accept{
+		width:47%;
+		margin:auto;
+		margin-left: 15px;
+		height:50px;
+	}
+}
+.two-clients{
+	width:100%;
+	span{
+		
+		width:20%;
+	}
+	.accept{
+		width:50%;
+		margin-left:15px;
+	}
+}
+.required-tip{
+				font-size: 0.7em;
+				width:100%;
+				margin-top:5px;
+				
+				text-align:center;
+}
+@media (max-width:1366px){
+	.order-form{
+		input{
+		height:4vh;
+		}
+		.second{
+			height:63%;
+		}
+
+	}
+
+}
+@media (max-width:640px) {
+	.content{
+		.order-form{
+			max-width:none;
+		width:95%;
+		max-height:none;
+		height:120vh;
+		margin-top:10%;
+		.second{
+			height:auto;
+
+		}
+	}
+	#second-user{
+		height:auto;
+		.agree{
+			display:none;
+		}
+
+	}
+		.agree{
+		width:100%;
+		margin:auto;
+		flex-flow: row wrap;
+			span{
+			width:80%;
+			padding:10px 5px;
+		
+			}
+			.accept{
+				width:90%;
+				}
+	}
+		.checkbox{
+		width:20px;
+		height:20px;
+		box-sizing: border-box;
+	}
+
+	}
+
+}

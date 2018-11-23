@@ -1,0 +1,88 @@
+//Styles for background polygons
+@import "variables";
+
+.shape-1{
+	
+    width: 54.8%;
+    height: 43.8%;
+  
+    background: $grey;
+    position: absolute;
+    top:0px;
+    left:0;
+ z-index: 1;
+-webkit-clip-path: polygon(0 0, 100% 0, 72% 100%, 0 54%);
+clip-path: polygon(0 0, 100% 0, 72% 100%, 0 54%);
+
+}
+
+ 
+.shape-2{
+	    width: 54.1%;
+    height: 48%;
+    
+    position: absolute;
+    top:0px;
+    left:39.4%;
+   z-index: -1;
+   
+-webkit-clip-path: polygon(100% 0, 41% 78%, 16% 100%, 0 91.5%, 28% 0);
+clip-path: polygon(100% 0, 41% 78%, 16% 100%, 0 91.5%, 28% 0);
+background: url('img/bg-photo-1.png') center left no-repeat;
+background-size: cover;
+
+background-color: $red-light;
+  background-blend-mode: soft-light;
+
+}
+
+ 
+.shape-3{
+	width: 41.7%;
+    height: 55.4%;
+    background: $grey;
+    position: absolute;
+    top:0px;
+    right:0px;
+    z-index: -2;
+    -webkit-clip-path: polygon(100% 0, 100% 82%, 0 100%, 9% 66.5%, 84% 0);
+    clip-path: polygon(100% 0, 100% 82%, 0 100%, 9% 66.5%, 84% 0);
+}
+.shape-4{
+	width: 41.7%;
+    height:54.8%;
+    background: $lightgrey;
+    position: absolute;
+    bottom: 0px;
+    right:0px;
+    z-index: -2;
+-webkit-clip-path: polygon(0 18%, 100% 0, 100% 100%, 28% 100%);
+clip-path: polygon(0 18%, 100% 0, 100% 100%, 28% 100%);
+}
+.shape-5{
+	width: 70%;
+    height:45%;
+    background: $red;
+    position: absolute;
+    bottom: 0px;
+    left:0px;
+    z-index: 1;
+-webkit-clip-path: polygon(68% 0, 83.5% 0, 100% 100%, 0 100%, 0 61%);
+clip-path: polygon(68% 0, 83.5% 0, 100% 100%, 0 100%, 0 61%);
+}
+.shape-6{
+	width: 39.5%;
+    height:65.8%;
+    background: $red;
+    position: absolute;
+    top: 20.9%;
+    left:0px;
+    
+    z-index: -2;
+    background: url('img/bg-photo-2.png') center left no-repeat;
+    background-size: cover;
+background-color: $red-light;
+  background-blend-mode: soft-light;
+-webkit-clip-path: polygon(0 0, 100% 34%, 89% 65%, 0% 100%);
+clip-path: polygon(0 0, 100% 34%, 89% 65%, 0% 100%);
+}

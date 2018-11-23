@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Budboat-page</title>
+  <link href="https://fonts.googleapis.com/css?family=Oswald:400,500|Roboto:400,700" rel="stylesheet">  
+ 
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div id="age_ver" class="popup-age">
+	<div class="lang"><a href="" class="lang__link-active">rus</a>/<a href="" class="lang__link">eng</a></div>
+	<div class="container-age">
+    	<div class="title">
+			<h1>#Budboat</h1>
+			<p>Подтверди что тебе исполнилось 18 лет</p>
+		</div>
+		<div class="form-age">
+			
+				<select name="day" id="day"></select>
+			
+			
+				<select name="month" id="month"></select>
+			
+			
+				<select name="year" id="year"></select>
+			
+		</div>
+		
+			<a href="javascript:ContentShow()" id="enter"><button class="accept" >Войти</button></a>
+		
+    </div>
+</div>
+<div class="content-wrapper">
+	
+	<div class="background-shapes">
+		<div class="shape-1"></div>
+		<div class="shape-2"></div>
+		<div class="shape-3"></div>
+		<div class="shape-4"></div>
+		<div class="shape-5"></div>
+		<div class="shape-6"></div>
+	</div>
+	
+
+    <div class="content">
+    	<div class="lang"><a href="" class="lang__link-active">rus</a>/<a href="" class="lang__link">eng</a></div>
+    	<div class="main-container">
+    		<header>
+    			<h1>#Budboat</h1>
+    			<p>Вертолетная площадка, бар, джакузи и гигантский экран для просмотра матчей чемпионата мира по футболу FIFA2018&#8482.</p>
+    		</header>
+    		<p class="photo-gallery link">Фотоотчет</p>
+    		<div class="order-form">
+	    		<div class="clients">
+			    	<div class="client-form">
+			    	<div class="client-form__wrapper">
+						<div class="client-form__container">
+							<div class="input" ><input type="text" placeholder="Имя*"> </div>
+							<div class="input" ><input type="text" placeholder="Фамилия*"></div>
+							<div class="input" ><input type="text" placeholder="Код"></div>
+
+				    	
+			    		</div>
+			    		<div class="client-form__container">
+			    		<div class="text-tip">Достаточно написать свой никнэйм</div>
+						 	<div class="input" ><input type="text" placeholder="Instagram"></div>
+							<div class="input" ><input type="text" placeholder="Email*"></div>
+							<div class="input" ><a href="javascript:SchedulesShow()"><input type="text" placeholder="дата заплыва*"></a></div>
+				    	</div>
+				    </div>
+
+
+			    		
+			    </div>
+
+			    <div class="client-form second">
+						<a class="add-quest link" href="javascript:	SecondUserShow()">Второй гость</a>
+						<div id="second-user">
+						    <div class="client-form">
+							    <div class="client-form__wrapper">
+									<div class="client-form__container">
+										<div class="input" ><input type="text" placeholder="Имя*"> </div>
+										<div class="input" ><input type="text" placeholder="Фамилия*"></div>
+									</div>
+							    	<div class="client-form__container">
+							    	<div class="text-tip">Достаточно написать свой никнэйм</div>
+										<div class="input" ><input type="text" placeholder="Instagram"></div>
+										<div class="input" ><input type="text" placeholder="Email*"></div>
+							    	</div>
+								</div>						    		
+						    </div>
+						    <div class="agree">
+						    	<span class="user-title">Второй гость</span>
+							    <div class="checkbox"></div>
+
+							    	<span>Нажимая подать заявку я принимаю все условия согласия на обработку персональных данных и обязательства об отказе от претензий</span>
+							    	
+							</div>
+						</div>
+			    		
+			    		
+			    </div>
+			    				    <div class="agree" id="agreed">
+				    	<div class="checkbox">	</div>
+				    						<span >Нажимая подать заявку я принимаю все условия согласия на обработку персональных данных и обязательства об отказе от претензий</span>
+				    						<button class="accept" >Подать заявку</button>
+				    </div>
+    		</div>
+    	</div>
+
+
+    		<div class="schedules" id="popup">
+    			<div class="schedules__header">
+	    			<div class="schedules__month">Июнь 
+	    				<span class="schedules__next-month">июль</span>
+	    			</div>
+	    			<div class="schedules__close">
+	    				<img src="img/time.png" /><span class="schedules__period"> Среднее время в пути 3 часа</span>
+	    				<a href="javascript:SchedulesHide()"><img src="img/close.png" /></a>
+	    			</div>
+    			</div>
+    			<div class="schedules__content-wrapper">
+	    			<div class="schedules__prev"><img src="img/prev.png" /></div>
+	    			<div class="schedules__content">
+
+	    				<div class="schedules__item">
+		    				<div class="schedules__caption">
+		    					<div class="schedules__date">1 июня
+		    						<span class="schedules__day">пятница</span>
+		    					</div>
+		    					
+		    				</div>
+		    				<div class="schedules__descr one-descr">
+		    					<div class="schedules__meet">
+		    						<p class="caption">Встреча гостей</p>
+		    						<p class="value">14:00 - 14:50</p>
+		    					</div>
+		    					<div class="schedules__begin">
+		    						<p class="caption">Начало мероприятия</p>
+		    						<p class="value">14:50 - 18:00</p>
+		    					</div>
+		    					<div class="schedules__departure">
+		    						<p class="caption">Отправление</p>
+		    						<p class="value">Кутузовский причал</p>
+		    					</div>
+		    					<div class="schedules__arrival">
+		    						<p class="caption">Прибытие</p>
+		    						<p class="value">Причал большой каменный мост</p>
+		    								
+		    					</div>
+		    				  					
+		    				</div>
+	    				</div>
+	    				<div class="schedules__item">
+		    				<div class="schedules__caption">
+		    					<div class="schedules__date">4 июня
+		    						<span class="schedules__day">понедельник</span>
+		    					</div>
+		    				</div>
+	    					<div class="schedules__descr">
+	    						<div class="schedules__meet">
+	    							<p class="caption">Встреча гостей</p>
+	    							<p class="value">13:00 - 13:50</p>
+	    						</div>
+	    						<div class="schedules__begin">
+	    							<p class="caption">Начало мероприятия</p>
+	    							<p class="value">13:50 - 16:30</p>
+	    						</div>
+	    						<div class="schedules__departure">
+	    							<p class="caption">Отправление</p>
+	    							<p class="value">Кутузовский причал</p>
+	    						</div>
+	    						<div class="schedules__arrival">
+	    							<p class="caption">Прибытие</p>
+	    							<p class="value">Причал большой каменный мост</p>
+	    								
+	    						</div>
+	    					</div>
+	    					<div class="schedules__descr">
+	    						<div class="schedules__meet">
+	    							<p class="caption">Встреча гостей</p>
+	    							<p class="value">19:00 - 19:30</p>
+	    						</div>
+	    						<div class="schedules__begin">
+	    							<p class="caption">Начало мероприятия</p>
+	    							<p class="value">19:30 - 22:00</p>
+	    						</div>
+	    						<div class="schedules__departure">
+	    							<p class="caption">Отправление</p>
+	    							<p class="value">Причал большой каменный мост</p>
+	    						</div>
+	    						<div class="schedules__arrival">
+	    							<p class="caption">Прибытие</p>
+	    							<p class="value">Кутузовский причал</p>
+	    								
+	    						</div>
+	    						
+	    					
+	    					</div>
+	    				</div>
+	    				<div class="schedules__item">
+	    					<div class="schedules__caption">
+	    						<div class="schedules__date">14 июня
+									<span class="schedules__day">четверг</span>
+	    						</div>
+	    					
+	    					</div>
+	    					<div class="schedules__descr one-descr">
+	    					<div class="schedules__meet">
+	    						<p class="caption">Встреча гостей</p>
+	    						<p class="value">16:30 - 17:50</p>
+	    					</div>
+	    						<div class="schedules__begin">
+	    							<p class="caption">Начало мероприятия</p>
+	    							<p class="value">17:50 - 20:30</p>
+	    						</div>
+	    						<div class="schedules__departure">
+	    							<p class="caption">Отправление</p>
+	    							<p class="value">Кутузовский причал</p>
+	    						</div>
+	    						<div class="schedules__arrival">
+	    									<p class="caption">Прибытие</p>
+	    									<p class="value">Причал большой каменный мост</p>
+	    								
+	    						</div>
+	    						
+	    					
+	    					</div>
+	    				</div>
+	    				<div class="schedules__item">
+		    				<div class="schedules__caption">
+		    					<div class="schedules__date">15 июня
+		    						<span class="schedules__day">пятница</span>
+		    					</div>
+		    					
+		    				</div>
+		    				<div class="schedules__descr">
+		    					<div class="schedules__meet">
+		    						<p class="caption">Встреча гостей</p>
+		    						<p class="value">14:00 - 14:50</p>
+		    						</div>
+		    						<div class="schedules__begin">
+		    							<p class="caption">Начало мероприятия</p>
+		    							<p class="value">14:50 - 17:30</p>
+		    						</div>
+		    							<div class="schedules__departure">
+		    								<p class="caption">Отправление</p>
+		    								<p class="value">Кутузовский причал</p>
+		    							</div>
+		    								<div class="schedules__arrival">
+		    									<p class="caption">Прибытие</p>
+		    									<p class="value">Причал большой каменный мост</p>
+		    								
+		    							</div>
+		    						
+		    					
+		    				</div>
+		    				<div class="schedules__descr">
+		    					<div class="schedules__meet">
+		    						<p class="caption">Встреча гостей</p>
+		    						<p class="value">19:50 - 20:50</p>
+		    						</div>
+		    						<div class="schedules__begin">
+		    							<p class="caption">Начало мероприятия</p>
+		    							<p class="value">20:50 - 23:30</p>
+		    						</div>
+		    							<div class="schedules__departure">
+		    								<p class="caption">Отправление</p>
+		    								<p class="value">Причал большой каменный мост</p>
+		    							</div>
+		    								<div class="schedules__arrival">
+		    									<p class="caption">Прибытие</p>
+		    									<p class="value">Кутузовский причал</p>
+		    								
+		    							</div>
+		    						
+		    					
+		    				</div>
+	    				</div>
+	    				<div class="schedules__item">
+		    				<div class="schedules__caption">
+		    					<div class="schedules__date">18 июня
+		    						<span class="schedules__day">понедельник</span>
+
+		    					</div>
+		    					
+		    				</div>
+		    				<div class="schedules__descr">
+		    					<div class="schedules__meet">
+		    						<p class="caption">Встреча гостей</p>
+		    						<p class="value">14:00 - 14:50</p>
+		    						</div>
+		    						<div class="schedules__begin">
+		    							<p class="caption">Начало мероприятия</p>
+		    							<p class="value">14:50 - 17:30</p>
+		    						</div>
+		    							<div class="schedules__departure">
+		    								<p class="caption">Отправление</p>
+		    								<p class="value">Кутузовский причал</p>
+		    							</div>
+		    								<div class="schedules__arrival">
+		    									<p class="caption">Прибытие</p>
+		    									<p class="value">Причал большой каменный мост</p>
+		    								
+		    							</div>
+		    						
+		    					
+		    				</div>
+		    				<div class="schedules__descr">
+		    					<div class="schedules__meet">
+		    						<p class="caption">Встреча гостей</p>
+		    						<p class="value">19:50 - 20:50</p>
+		    						</div>
+		    						<div class="schedules__begin">
+		    							<p class="caption">Начало мероприятия</p>
+		    							<p class="value">20:50 - 23:30</p>
+		    						</div>
+		    							<div class="schedules__departure">
+		    								<p class="caption">Отправление</p>
+		    								<p class="value">Причал большой каменный мост</p>
+		    							</div>
+		    								<div class="schedules__arrival">
+		    									<p class="caption">Прибытие</p>
+		    									<p class="value">Кутузовский причал</p>
+		    								
+		    							</div>
+		    						
+		    					
+		    				</div>
+	    				</div>
+	    			</div>
+	    			<div class="schedules__next"><img src="img/next.png" /></div>
+	    		</div>
+	    		<button class="accept">Подтвердить</button>
+
+    		</div>
+    </div>
+    	
+
+<div class="required-tip">* Обязательные для заполнения поля</div>
+
+
+
+	<footer>
+    		<p>
+    			<span>&#169; 2018 BUD</span>
+	    		<span>
+	    			<a href="">
+	    				<img src="img/fb.png" alt="facebook"/>
+	    			</a>
+	    		</span>
+	    		<span>
+	    			<a href="">
+	    				<img src="img/youtube.png" alt="youtube"/></a>
+	    		</span> 
+    		</p>
+    	
+    		<p><span>&#169; 2018 Anheuser-Busch InBev.</span> <span>Политика конфиденциальности </span><span> Условия пользования сайтом</span> </p>
+    	</footer>
+    	   
+    	
+    		
+    	
+  
+	</div>
+
+</div>
+<script
+			  src="https://code.jquery.com/jquery-2.2.4.min.js"
+			  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+			  crossorigin="anonymous">
+		
+			  </script>
+
+<script>
+
+    $(document).ready(function(){
+    	
+        //Скрыть PopUp при загрузке страницы    
+        PopUpHide("#popup");
+        PopUpHide("#second-user");
+        PopUpHide(".content-wrapper");
+		fillingYear(2018, 1900, $("#year"));
+		fillingMonth($("#month"));
+		fillingDays($("#day"));
+
+		
+
+
+    });
+    function fillingYear(yearBegin, yearEnd, element){
+    	//filling selects for check age function
+        let yearArr=[]; 
+        for (let i = yearBegin; i >= yearEnd; i--) {
+        	let option=document.createElement("option");
+        	option.setAttribute("value", i);
+        	option.appendChild(document.createTextNode(i));
+        	yearArr.push(option);
+
+
+        }
+        element.append(yearArr);
+    }
+    function fillingMonth(element){
+    	let monthArr=[]; 
+    	const monthNames=["январь","февраль","март","апрель","май","июнь","июль","август","сентябрь","октябрь","ноябрь","декабрь"];
+        for (let i = 0; i<monthNames.length; i++) {
+        	let option=document.createElement("option");
+        	option.setAttribute("value", i);
+        	option.appendChild(document.createTextNode(monthNames[i]));
+        	monthArr.push(option);
+
+
+        }
+        element.append(monthArr);
+    }
+    function fillingDays(element, dayCount){
+    	        let daysArr=[];
+    	       dayCount = (!dayCount) ? 31:dayCount;
+        for (let i = 1; i <= dayCount; i++) {
+        	let option=document.createElement("option");
+        	option.setAttribute("value", i);
+        	option.appendChild(document.createTextNode(i));
+        	daysArr.push(option);
+
+
+        }
+        element.append(daysArr);
+
+    }
+
+    function checkAge(dayElement, monthElement, yearElement, resultElement){
+    	const today=new Date();
+    	let day=dayElement.val(), month=monthElement.val(), year=yearElement.val(), birthDay= new Date(year,month,day,-today.getTimezoneOffset()/60);
+    	let diff=~~(((~~(+today/(1000*3600*24)))-(~~(+birthDay/(1000*3600*24))))/365);
+    	
+    	if(diff<18){
+
+    		
+	    		let result=document.createElement("div");
+	    		result.setAttribute("class", "result");
+	    		result.appendChild(document.createTextNode("Вы не можете войти, вам не исполнилось 18 лет"));
+	    		$(result).appendTo( "#enter" );
+    		
+    		
+    	}
+    	else{
+    		$(".result").remove();
+    		return true;
+    	}
+    	 
+    	
+
+
+
+    }
+
+    $(".schedules__descr").click(function( event ) {
+  		let target = $(event.target);
+  		
+  		$(".schedules__descr").removeClass("selected", "disable");
+  		$(this).addClass("selected");
+  		selectDate();
+
+	});
+    $(".checkbox").click(function( event ){
+    	$(this).toggleClass("checked");
+    });
+
+    function selectDate(){
+
+    	
+    	$(".schedules__descr").addClass("disable");
+    	$(".selected").removeClass("disable");
+  
+
+
+    };
+    function PopUpShow(selector){
+    	     
+        $(selector).show();
+    }
+    function PopUpHide(selector){
+    	
+    	$(selector).hide();
+
+    }
+    function SecondUserShow(){
+    	PopUpHide(".add-quest");
+    	PopUpShow("#second-user");
+    	$("#agreed").addClass("two-clients")
+    }
+    function SchedulesShow(){
+    	PopUpShow(".schedules");    	
+    }
+    function SchedulesHide(){
+    	PopUpHide(".schedules");
+    	
+    }
+    function ContentShow(){
+    	if(checkAge($("#day"), $("#month"), $("#year"))){
+    		PopUpHide("#age_ver");
+    		PopUpShow(".content-wrapper");	
+    	}
+
+    	
+
+    }
+    $( "select" ).change(function () {
+    	    let countDays=new Date(+$("#year").val(),(+$("#month").val()+1),0).getDate();
+     		fillingDays($("#day"),countDays);
+    });
+   
+
+</script>
+</body>
+</html>
