@@ -264,6 +264,7 @@ header {
   font-weight: 500; }
 
 .schedules__next, .schedules__prev {
+  height: 100%;
   padding: 0px 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -288,6 +289,7 @@ header {
   .schedules__next, .schedules__prev {
     display: none; }
   .schedules {
+    left: 0%;
     width: 90%;
     max-width: none;
     height: 70%;
@@ -295,16 +297,26 @@ header {
     top: 20vh;
     left: 10px;
     bottom: auto; }
+    .schedules .accept {
+      margin-bottom: 5px; }
+    .schedules .schedules__header .schedules__close {
+      padding-right: 0px; }
     .schedules .schedules__header .schedules__period {
       margin: 0px 5px; }
-    .schedules .schedules__content {
+    .schedules .schedules__content-wrapper .schedules__content {
+      margin: auto;
+      margin-top: 20%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
-      flex-flow: column nowrap; } }
+      flex-flow: column nowrap; }
+      .schedules .schedules__content-wrapper .schedules__content .schedules__next, .schedules .schedules__content-wrapper .schedules__content .schedules__prev {
+        display: none; }
+  .accept {
+    width: 70%; } }
 
 .order-form {
   min-height: 32%;
@@ -367,10 +379,11 @@ header {
     height: 70%; }
     .order-form .second .add-quest {
       width: 100%;
-      height: 100%;
+      height: 16.5vh;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
+      margin: auto;
       margin-top: 5px;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
